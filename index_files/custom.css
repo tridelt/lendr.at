@@ -5,6 +5,7 @@
     border: 0;
     /* margin-bottom: 1.5em; */
     border-radius: 15px;
+    background-size: cover;
   }
   .card:hover {
     transform: scale(1.1);
