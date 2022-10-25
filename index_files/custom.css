@@ -10,3 +10,9 @@
   .card:hover {
     transform: scale(1.1);
   }
+
+
+  /* ToDo: TMP-only! remove this later on */
+  large {
+    text-shadow: rgb(0, 0, 0) 1px 0 10px;
+  }
