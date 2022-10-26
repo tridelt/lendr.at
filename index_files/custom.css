@@ -20,3 +20,10 @@
   .bubble-desc {
     min-height: 190px;
   }
+
+ .list-group{
+  max-height: 80vh;
+  margin-bottom: 10px;
+  overflow:scroll;
+  -webkit-overflow-scrolling: touch;
+}

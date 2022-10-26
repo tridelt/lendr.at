@@ -25,6 +25,14 @@
     <meta name="theme-color" content="#7952b3">
 
     <style>
+        html,
+        body {
+            margin: 0;
+            height: 100%;
+            overflow: hidden
+        }
+
+
         .bd-placeholder-img {
             font-size: 1.125rem;
             text-anchor: middle;
@@ -43,6 +51,10 @@
             .small-screen {
                 display: none;
             }
+
+            .canvas-mobile {
+                /* height */
+            }
         }
     </style>
     <link rel="stylesheet" href="./index_files/custom.css">
@@ -53,7 +65,7 @@
 
 <body>
 
-    <header class="p-3 mb-3 border-bottom">
+    <header class="p-3 border-bottom">
         <div class="container">
             <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="./index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
@@ -144,69 +156,134 @@
     </header>
 
     <!-- <main> -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-2 small-screen" style="height: 600px; background-color: rgb(205, 132, 132);">
-                Level 1: .col-sm-3
-            </div>
-
-            <div class="col-md-10 col-12">
-                <div class="row">
-                    <div class="col-8 col-sm-8" style="height: 150px; background-color: rgb(145, 205, 132);">
-                        Level 2: .col-8 .col-sm-6
+    <main>
+        <div class="container-fluid">
+            <div class="p-3" style="border: 2px solid #e6e6e6;">
+                <div class="row justify-content-md-center" style="height: 90vh;">
+                    <div class="col-sm-3 small-screen"
+                        style="border-top: 1px solid #e6e6e6; border-right: 1px solid #e6e6e6;">
+                        <a
+                            class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+                            <svg class="bi pe-none me-2" width="30" height="24">
+                                <use xlink:href="#bootstrap"></use>
+                            </svg>
+                            <span class="fs-5 fw-bold">Lended Items</span>
+                        </a>
+                        <div class="list-group list-group-flush border-bottom scrollarea">
+                            <a href="#" class="list-group-item list-group-item-action active py-3 lh-sm"
+                                aria-current="true">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Tretroller für Kinder</strong>
+                                    <small>Wed</small>
+                                </div>
+                                <div class="col-10 mb-1 small">Iusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitat
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">XBox 360</strong>
+                                    <small class="text-muted">Tues</small>
+                                </div>
+                                <div class="col-10 mb-1 small">Incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    minim veniam, quis nostrud exercitat
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Fön</strong>
+                                    <small class="text-muted">Mon</small>
+                                </div>
+                                <div class="col-10 mb-1 small">Neque porro quisquam est, qui dolorem ipsum quia dolor
+                                    sit amet, consectetur.
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Mountain Bike</strong>
+                                    <small class="text-muted">Mon</small>
+                                </div>
+                                <div class="col-10 mb-1 small">Eum empor incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam, quis nostrud exercitat
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Verlängerungskabel</strong>
+                                    <small class="text-muted">Mon</small>
+                                </div>
+                                <div class="col-10 mb-1 small">Ut enim ad minim veniam, quis nostrud exercitat.
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Gaming Headset</strong>
+                                    <small class="text-muted">Mon</small>
+                                </div>
+                                <div class="col-10 mb-1 small">Ammpuri incididunt ut labore et dolore magna aliqua. Ut
+                                    enim ad minim veniam, quis nostrud exercitat
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Monopoly (Brettspiel)</strong>
+                                    <small class="text-muted">Mon</small>
+                                </div>
+                                <div class="col-10 mb-1 small">iusmod tempor incididunt ut labore et dolore magna
+                                    aliqua. Ut enim ad minim veniam, quis nostrud exercitat
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <strong class="mb-1">Baumwoll Sweater</strong>
+                                    <small class="text-muted">Mon</small>
+                                </div>
+                                <div class="col-10 mb-1 small">Scing elit, sed do eiusmod tempor incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat
+                                </div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-4 col-sm-4" style="height: 150px; background-color: rgb(132, 141, 205);">
-                        Level 2: .col-4 .col-sm-6
+
+                    <div class="col-md-9 col-12">
+                        <div class="row" style="height: 50%; background-color: #F9FAFD">
+                            <div class="col-sm-12 col-md-12" style="height: 100%;">
+                                <img src="./img/tretroller.jpg"
+                                    style="width: 100%; height: 100%; object-fit: contain;" />
+                            </div>
+                            <div class="row p-3" style="height: 35%;">
+                                <div class="col-12" style="border-top: 1px solid #e6e6e6;">
+                                    <div class="p-2">
+                                        <h1 class="pb-3">Tretroller für Kinder</h1>
+
+                                        <h3>Detailinformationen</h3>
+                                        <div class="d-flex justify-content-between" style="width: 30%;">
+                                            <p style="color: grey; padding-right: 20px;">Zustand</p>
+                                            <p>Neu</p>
+                                        </div>
+                                        <div class="d-flex justify-content-between" style="width: 30%;">
+                                            <p style="color: grey; padding-right: 20px;">Übergabe</p>
+                                            <p>Selbstabholung</p>
+                                        </div>
+                                        <h3>Beschreibung</h3>
+                                        <p>
+                                            Edle Vase (gebürstetes Aluminium) inkl. geschmackvoller Weihnachtsdekoration
+                                            und
+                                            LED Beleuchtung warmweiß - Batterie inkl. Fernbedienung abzugeben. Höhe
+                                            gesamt
+                                            95 cm. Vase: Höhe 38 cm, Breite: 35 cm
+                                        </p>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
-    <!-- 
-        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white collapse" style="width: 380px;">
-            <a class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
-                <svg class="bi pe-none me-2" width="30" height="24">
-                    <use xlink:href="#bootstrap"></use>
-                </svg>
-                <span class="fs-5 fw-semibold">Rented Items</span>
-            </a>
-            <div class="list-group list-group-flush border-bottom scrollarea">
-                <a href="#" class="list-group-item list-group-item-action active py-3 lh-sm" aria-current="true">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small>Wed</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
-                    </div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Tues</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
-                    </div>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action py-3 lh-sm">
-                    <div class="d-flex w-100 align-items-center justify-content-between">
-                        <strong class="mb-1">List group item heading</strong>
-                        <small class="text-muted">Mon</small>
-                    </div>
-                    <div class="col-10 mb-1 small">Some placeholder content in a paragraph below the heading and date.
-                    </div>
-                </a>
-            </div>
-        </div> -->
-
-
-    <!-- </main> -->
-
-    <footer class="text-muted py-5">
-        <div class="container">
-            <p class="float-end mb-1">Made with ❤️ by A[r]SE</p>
-        </div>
-    </footer>
 
 
     <script src="./index_files/bootstrap.bundle.min.js"
